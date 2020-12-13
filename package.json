@@ -1,0 +1,24 @@
+{
+  "name": "league-solo-visual",
+  "version": "1.0.0",
+  "description": "Visualization of League of Legend Solo Match",
+  "main": "main.js",
+  "dependencies": {
+    "g-sheets-api": "^1.4.0",
+    "mustache": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamZYu/league-solo-visual.git"
+  },
+  "author": "Zhen Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamZYu/league-solo-visual/issues"
+  },
+  "homepage": "https://github.com/JamZYu/league-solo-visual#readme"
+}
