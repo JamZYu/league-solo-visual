@@ -1,0 +1,13 @@
+//main sass file
+
+//partials
+@import 'partials/_var.scss';
+@import 'partials/_header.scss';
+@import 'partials/_table-styles.scss';
+@import 'partials/_ui-styles.scss';
+
+//pages
+@import 'pages/_homepage.scss';
+@import 'pages/_standings.scss';
+@import 'pages/_schedule.scss';
+ 

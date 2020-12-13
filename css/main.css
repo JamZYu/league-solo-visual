@@ -1,0 +1,83 @@
+nav a {
+  color: #ede68a; }
+
+.jumbotron {
+  background-color: #0d0d0e; }
+  .jumbotron .search-field {
+    background: black;
+    color: white;
+    outline: none;
+    border: none; }
+    .jumbotron .search-field:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #ede68a; }
+    .jumbotron .search-field:placeholder {
+      color: rgba(255, 255, 255, 0.4); }
+  .jumbotron .btn[type="submit"] {
+    background: #b0a565;
+    color: #0d0d0e;
+    opacity: 0.65; }
+    .jumbotron .btn[type="submit"]:hover {
+      opacity: 1; }
+  .jumbotron .form-control {
+    border-radius: 0px; }
+  .jumbotron .btn {
+    border-radius: 0px; }
+
+.dropdown-menu {
+  background-color: black; }
+  .dropdown-menu a {
+    color: white; }
+
+table.table-dark {
+  background-color: rgba(255, 255, 255, 0.05);
+  /*image styles */ }
+  table.table-dark img {
+    width: 50px;
+    margin-right: 10px; }
+
+a {
+  color: #ede68a; }
+  a:hover {
+    color: #b0a565; }
+
+.nav-tabs .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #b0a565;
+  border-color: transparent; }
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover, .nav-tabs .nav-link:active {
+  border-color: transparent; }
+
+.hp {
+  background: #0d0d0e;
+  color: white; }
+
+.schedule-carousel .carousel-cell {
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  height: 72px;
+  width: 150px; }
+
+.schedule-carousel .carousel-cell.is-selected {
+  background: rgba(255, 255, 255, 0.05); }
+
+.schedule-carousel img {
+  width: 37px; }
+
+.home-media {
+  max-width: 1200px; }
+
+.standings {
+  background: #0d0d0e; }
+
+#scheduleTable td {
+  align-content: center;
+  vertical-align: middle; }
+  #scheduleTable td p {
+    display: inline-block;
+    margin: 10px 0 0 10px; }
+
+#scheduleTable img {
+  width: 50px;
+  float: left; }

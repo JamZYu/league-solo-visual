@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet"  href="node_modules//bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet"  href="node_modules/flickity/css/flickity.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- end build -->
+    <title>5 Bucks Solocup</title>
+  </head>
+
+  <body class="hp">
+    
+    <div class="jumbotron py-sm-2 my-0">
+      <!-- logo here -->
+      <nav class="navbar navbar-expand-lg text-white navbar-dark">
+        <a class="navbar-brand" href="/">5 Bucks Solocup</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/standings.html">Match Record</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Stats</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Teams
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">TSM</a>
+                <a class="dropdown-item" href="#">Team Liquid</a>
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="#">FlyQuest</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Watch</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 ">
+            <input
+              class="rounded-left form-control mr-sm-0 search-field"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="ml-0 btn btn-outline my-2 my-sm-0 rounded-right" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <!-- teams ticker-->
+    <div id="teamsTicker" class="row ticker-wrapper schedule-carousel d-block mx-2">
+     
+      <div class="carousel-cell ticker-block justify-content-start"
+        style="background:light-grey;border:1px solid black;">
+        <div class="w-100 m-0 pl-2 pt-2">
+          <h6>Week 1</h6>
+        </div>
+        
+        <div class="match-wrapper d-inline-block">
+          <div class="col-6 float-left">
+            <img src="img/c9.png"/>
+          </div>
+          <div class=" col-6 float-left">
+            <img src="img/flyquest.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-cell ticker-block justify-content-start"
+        style="background:light-grey;border:1px solid black;">
+        <div class="w-100 m-0 pl-2 pt-2">
+        
+        </div>
+        <div class="team-wrapper d-inline-block">
+          <div class="col float-left w-50">
+            <img src="img/liquid.png"  />
+          </div>
+          <div class="col float-left w-50">
+            <img src="img/tsm.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-cell ticker-block justify-content-start"
+        style="background:light-grey;border:1px solid black;">
+        <div class="w-100 m-0 pl-2 pt-2">
+          
+        </div>
+        <div class="team-wrapper d-inline-block">
+          <div class="col float-left w-50">
+            <img src="img/clg.png" />
+          </div>
+          <div class="col float-left w-50">
+            <img src="img/100thieves.png"  />
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-cell ticker-block justify-content-start"
+        style="background:light-grey;border:1px solid black;">
+        <div class="w-100 m-0 pl-2 pt-2">
+          
+        </div>
+        <div class="team-wrapper d-inline-block">
+          <div class="col float-left w-50">
+            <img src="img/optic.png" />
+          </div>
+          <div class="col float-left w-50">
+            <img src="img/clutch.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-cell ticker-block justify-content-start"
+        style="background:light-grey;border:1px solid black;">
+        <div class="w-100 m-0 pl-2 pt-2">
+        </div>
+        <div class="team-wrapper d-inline-block">
+          <div class="col float-left w-50">
+            <img src="img/gg.png" />
+          </div>
+          <div class="col float-left w-50">
+            <img src="img/echofox.png" />
+          </div>
+        </div>
+      </div>
+
+
+      <!-- week 2-->
+
+      <div class="carousel-cell ticker-block justify-content-start"
+        style="background:light-grey;border:1px solid black;">
+        <div class="w-100 m-0 pl-2 pt-2">
+          <h6>Week 2</h6>
+        </div>
+        
+        <div class="match-wrapper d-inline-block">
+          <div class="col-6 float-left">
+            <img src="img/c9.png"/>
+          </div>
+          <div class=" col-6 float-left">
+            <img src="img/echofox.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-cell ticker-block justify-content-start"
+        style="background:light-grey;border:1px solid black;">
+        <div class="w-100 m-0 pl-2 pt-2">
+        
+        </div>
+        <div class="team-wrapper d-inline-block">
+          <div class="col float-left w-50">
+            <img src="img/liquid.png"  />
+          </div>
+          <div class="col float-left w-50">
+            <img src="img/100thieves.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-cell ticker-block justify-content-start"
+        style="background:light-grey;border:1px solid black;">
+        <div class="w-100 m-0 pl-2 pt-2">
+          
+        </div>
+        <div class="team-wrapper d-inline-block">
+          <div class="col float-left w-50">
+            <img src="img/tsm.png" />
+          </div>
+          <div class="col float-left w-50">
+            <img src="img/flyquest.png"  />
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-cell ticker-block justify-content-start"
+        style="background:light-grey;border:1px solid black;">
+        <div class="w-100 m-0 pl-2 pt-2">
+          
+        </div>
+        <div class="team-wrapper d-inline-block">
+          <div class="col float-left w-50">
+            <img src="img/optic.png" />
+          </div>
+          <div class="col float-left w-50">
+            <img src="img/clg.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-cell ticker-block justify-content-start"
+        style="background:light-grey;border:1px solid black;">
+        <div class="w-100 m-0 pl-2 pt-2">
+        </div>
+        <div class="team-wrapper d-inline-block">
+          <div class="col float-left w-50">
+            <img src="img/clutch.png" />
+          </div>
+          <div class="col float-left w-50">
+            <img src="img/gg.png" />
+          </div>
+        </div>
+      </div>
+
+
+      <!-- week 3-->
+
+      <div class="carousel-cell ticker-block justify-content-start"
+      style="background:light-grey;border:1px solid black;">
+      <div class="w-100 m-0 pl-2 pt-2">
+        <h6>Week 3</h6>
+      </div>
+      
+      <div class="match-wrapper d-inline-block">
+        <div class="col-6 float-left">
+          <img src="img/liquid.png"/>
+        </div>
+        <div class=" col-6 float-left">
+          <img src="img/flyquest.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-cell ticker-block justify-content-start"
+      style="background:light-grey;border:1px solid black;">
+      <div class="w-100 m-0 pl-2 pt-2">
+      
+      </div>
+      <div class="team-wrapper d-inline-block">
+        <div class="col float-left w-50">
+          <img src="img/c9.png"  />
+        </div>
+        <div class="col float-left w-50">
+          <img src="img/optic.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-cell ticker-block justify-content-start"
+      style="background:light-grey;border:1px solid black;">
+      <div class="w-100 m-0 pl-2 pt-2">
+        
+      </div>
+      <div class="team-wrapper d-inline-block">
+        <div class="col float-left w-50">
+          <img src="img/clg.png" />
+        </div>
+        <div class="col float-left w-50">
+          <img src="img/echofox.png"  />
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-cell ticker-block justify-content-start"
+      style="background:light-grey;border:1px solid black;">
+      <div class="w-100 m-0 pl-2 pt-2">
+        
+      </div>
+      <div class="team-wrapper d-inline-block">
+        <div class="col float-left w-50">
+          <img src="img/clutch.png" />
+        </div>
+        <div class="col float-left w-50">
+          <img src="img/tsm.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-cell ticker-block justify-content-start"
+      style="background:light-grey;border:1px solid black;">
+      <div class="w-100 m-0 pl-2 pt-2">
+      </div>
+      <div class="team-wrapper d-inline-block">
+        <div class="col float-left w-50">
+          <img src="img/100thieves.png" />
+        </div>
+        <div class="col float-left w-50">
+          <img src="img/clutch.png" />
+        </div>
+      </div>
+    </div>
+
+    </div>
+     <!-- end teams ticker-->
+
+    <div class="mt-2">
+      <div class="col">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/tsm-bkg.jpg" alt="First slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/fnatic-bkg.jpg" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/g2-bkg.png" alt="Third slide" />
+            </div>
+          </div>
+        </div>
+
+            <div class="media d-flex flex-wrap mx-auto my-5 home-media align-items-center align-content-center justify-content-center">
+              <img class="col-md-6" src="img/stixxay.jpeg" alt="Stixxay">
+              <div class="media-body d-flex align-content-center flex-wrap">
+                <h5 class="">Stixxay Breaks ADC Records.. AGAIN</h5>
+                <p>Trevor Hayes, better known by the name Stixxay, is an American professional League of Legends player who is currently the AD Carry for Counter Logic Gaming of the North American League of Legends Championship Series. Stixxay started his League of Legends professional career as the starting ADC for CLG's Challenger NA team CLG Black and substitute ADC for Misfits. In the 2015 Spring Challenger Series, CLG Black and Stixxay finished 2-8. In November 2015 he was elevated to the main team, replacing Peter "Doublelift" Peng at AD Carry..<br/><small>from alchetron.com/Stixxay</small></p>
+                <button class="btn btn-primary">Read More</button>
+              </div>
+            </div>
+         
+
+          <div class="row m-5">
+            <h2>Recent Weeks</h2>
+            <div class="row prev-matches ">
+
+              <div class="col-md-4 p-5 ">
+                <a href="" class="text-white">
+                <img src="img/lcs-header.jpg" class="w-100">
+                <h3>What's happening during Week 1</h3>
+                
+                </a>
+              </div>
+
+              <div class="col-md-4 p-5">
+                <a href=""  class="text-white">
+                <img src="img/lcs-header.jpg" class="w-100">
+                <h3>What to Look Forward to in Week 2</h3>
+                </a>
+              </div>
+
+              <div class="col-md-4 p-5">
+                <a href=""  class="text-white">
+                <img src="img/tsm-bkg.jpg" class="w-100">
+                <h3>Can TSM keep Reigning at the Top?</h3>
+                </a>
+              </div>
+
+            
+            </div>
+          
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+   <!-- build:js js/main.js-->
+    <script
+      src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script>
+      src="js/main.js"
+    </script>
+    <script
+      src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script
+      src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+<!--- endbuild -->
+  </body>
+</html>

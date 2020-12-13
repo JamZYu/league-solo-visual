@@ -1,0 +1,46 @@
+nav{
+    a{
+        color: $gold;
+    }
+}
+
+.jumbotron{
+    background-color: $bkg-color;
+    .search-field{
+        background:black;
+        color:white;
+        outline:none;
+        border:none;
+        &:focus{
+            outline:none;
+            box-shadow:none;
+            border-color: $gold;
+        }
+        &:placeholder{
+            color: rgba(255, 255, 255, 0.4);
+        }
+    }
+    .btn[type="submit"]{
+        background:$mid-gold;
+        color:$bkg-color;
+        opacity: 0.65;
+        &:hover{
+            opacity:1;
+        }
+    }
+    .form-control{
+        border-radius:0px;
+        
+    }
+    .btn{
+        border-radius:0px;
+    }
+}
+
+.dropdown-menu{
+    background-color: black;
+    a{
+        color: white;
+    }
+}
+
