@@ -1,19 +1,4 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-$(function(){
-  $('.schedule-carousel').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true,
-    groupCells: 5,
-    prevNextButtons: false,
-    pageDots: false,
-   
-  });
-
- $('.standingheader').tooltip();
-})
-
-console.log("This!>>>>>>")
 const reader = require("g-sheets-api");
 const Mustache = require("mustache");
 const readerOptions = {
@@ -29,6 +14,7 @@ const readerOptions = {
 
 reader(readerOptions, (results) => {
   let season = -1
+  console.log(results)
   for (var i = 0; i < results.length; ++i) {
 
     if ("season" in results[i])
@@ -39,6 +25,7 @@ reader(readerOptions, (results) => {
       var html = Mustache.render(template, {"season": season});
 
       li = document.createElement("li")
+      li.classList.add("nav-item")
       li.innerHTML = html;
       panal = document.getElementById("seasonlist")
       panal.appendChild(li)
@@ -48,10 +35,8 @@ reader(readerOptions, (results) => {
       var template = document.getElementById("table-template").textContent;
       var html = Mustache.render(template, {"season": season});
 
-      div = document.createElement('div')
-      div.innerHTML = html
       schedule = document.getElementById("scheduleTable")
-      schedule.appendChild(div)
+      schedule.innerHTML += html
 
 
     }
@@ -64,7 +49,6 @@ reader(readerOptions, (results) => {
     
     panal = document.getElementById("tseason" + season)
     panal.appendChild(tr)
-    console.log(results)
   }
 });
 },{"g-sheets-api":4,"mustache":5}],2:[function(require,module,exports){
