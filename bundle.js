@@ -11,7 +11,6 @@ const readerOptions = {
 
 
 
-
 reader(readerOptions, (results) => {
   let season = -1
   console.log(results)
@@ -51,6 +50,10 @@ reader(readerOptions, (results) => {
     panal.appendChild(tr)
   }
 });
+
+
+
+
 },{"g-sheets-api":4,"mustache":5}],2:[function(require,module,exports){
 "use strict";
 

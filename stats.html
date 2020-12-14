@@ -41,7 +41,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="stats.html">Stats</a>
-            </li>
+            </li>>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -91,38 +91,20 @@
             </li>
           </ul>
           <div id="scheduleTable" class="tab-content">
-<script id="match-template" type="text/html">
-                      <th scope="row"><p>#{{round}}</p></th>
-                      <td>
-                        <img src="https://opgg-static.akamaized.net/images/lol/champion/{{blue-champ}}.png?image=q_auto,w_140&v=1601445791" width="200px" />
-                        <p>{{blue-name}}</p>
-                      </td>
-                      <td><p>{{score}}</p></td>
-                      <td>
-                        <img src="https://opgg-static.akamaized.net/images/lol/champion/{{red-champ}}.png?image=q_auto,w_140&v=1601445791" width="200px" />
-                        <p>{{red-name}}</p>
-</script>
+          </div>
 
-<script id="table-template" type="text/html">
-  <div role="tabpanel" class="tab-pane fade" id="season{{season}}">
-  <div class="table-responsive">
-    <table class="table table-hover table-dark">
-      <tbody id="tseason{{season}}">
-      </tbody>
-    </table>
-  </div>  
-  </div>  
-</script>
 
-<script id="season-template" type="text/html">
-              <a href="#season{{season}}" class="nav-link" role="tab" data-toggle="tab" id="weekTab">{{season}}</a>
 
-</script>
 
 
 
     <!-- build:js js/main.js-->
-    <script src="bundle.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-path.v1.min.js"></script>
+    <script src="https://d3js.org/d3-shape.v1.min.js"></script>
+    <script src="bundle2.js"></script>
     <script src="js/jquery/dist/jquery.slim.min.js"></script>
     <script src="js/popper.js/dist/umd/popper.min.js"></script>
     <script src="js/flickity/dist/flickity.pkgd.min.js"></script>
