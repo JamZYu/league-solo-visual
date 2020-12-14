@@ -6,9 +6,9 @@ const readerOptions = {
 };
 
 
-let width = 730;
+let width = 500;
 let radius = width / 2;
-let colorNone = "#fff";
+let colorNone = "#eee";
 let colorOut = "#00f";
 let colorIn = "#f00";
 
@@ -102,7 +102,7 @@ function generateTree(data) {
         .selectAll("path")
         .data(root.leaves().flatMap(leaf => leaf.outgoing))
         .join("path")
-        .style("mix-blend-mode", "multiply")
+        .style("mix-blend-mode", null)
         .attr("d", ([i, o]) => line(i.path(o)))
         .each(function (d) {
             d.path = this;
@@ -118,7 +118,7 @@ function generateTree(data) {
     }
   
     function outed(d) {
-        link.style("mix-blend-mode", "multiply");
+        link.style("mix-blend-mode", null);
         d3.select(this).attr("font-weight", null);
         d3.selectAll(d.incoming.map(d => d.path)).attr("stroke", null);
         d3.selectAll(d.incoming.map(([d]) => d.text)).attr("fill", null).attr("font-weight", null);
