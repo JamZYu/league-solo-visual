@@ -13,7 +13,7 @@
     <link rel="stylesheet"  href="js/flickity/css/flickity.css" />
     <link rel="stylesheet" href="css/main.css" />
     <!-- end build -->
-    <title>5 Bucks Solocup</title>
+    <title>League Solocup</title>
   </head>
 
   <body class="hp">
@@ -21,7 +21,7 @@
     <div class="jumbotron py-sm-2 my-0">
       <!-- logo here -->
       <nav class="navbar navbar-expand-lg text-white navbar-dark">
-        <a class="navbar-brand" href="/league-solo-visual">5 Bucks Solocup</a>
+        <a class="navbar-brand" href="/league-solo-visual">League Solocup</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,40 +42,7 @@
             <li class="nav-item">
               <a class="nav-link" href="stats.html">Stats</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Players
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">TSM</a>
-                <a class="dropdown-item" href="#">Team Liquid</a>
-                <!-- <div class="dropdown-divider"></div> -->
-                <a class="dropdown-item" href="#">FlyQuest</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#"></a>
-            </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0 ">
-            <input
-              class="rounded-left form-control mr-sm-0 search-field"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="ml-0 btn btn-outline my-2 my-sm-0 rounded-right" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </nav>
     </div>
@@ -101,10 +68,15 @@
                         <img src="https://opgg-static.akamaized.net/images/lol/champion/{{blue-champ}}.png?image=q_auto,w_140&v=1601445791" width="200px" />
                         <p>{{blue-name}}</p>
                       </td>
-                      <td><p>{{score}}</p></td>
+                      <td><p>{{score}}                          
+                               </p></td>
+                               <td>
+                              </td>
                       <td>
                         <img src="https://opgg-static.akamaized.net/images/lol/champion/{{red-champ}}.png?image=q_auto,w_140&v=1601445791" width="200px" />
                         <p>{{red-name}}</p>
+                      </td>
+
 </script>
 
 <script id="table-template" type="text/html">

@@ -38,6 +38,14 @@ reader(readerOptions, (results) => {
 
 
     }
+    if (results[i]["win"] == "blue")
+    {
+      results[i]["score"] = "1 - 0"
+    }
+    else
+    {
+      results[i]["score"] = "0 - 1"
+    }
 
     var template = document.getElementById("match-template").textContent;
     var html = Mustache.render(template, results[i]);

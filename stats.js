@@ -6,8 +6,8 @@ const readerOptions = {
 };
 
 
-let width = 500;
-let radius = width / 2;
+let width = 650;
+let radius = width / 2.3;
 let colorNone = "#eee";
 let colorOut = "#00f";
 let colorIn = "#f00";
